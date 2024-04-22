@@ -1,0 +1,130 @@
+##Online Notes Sharing Portal
+
+This project is an online platform for sharing and managing notes. Users can create, edit, and delete notes, as well as search for specific notes by title. It also includes authentication features for user registration and login.
+
+
+
+## Features
+
+- User registration and login
+-Create, edit, and delete notes
+-Search notes by title
+-Responsive design for mobile and desktop devices
+-Secure authentication using encrypted passwords
+
+## Technologies Used
+
+#IDE
+-Eclipse
+
+#Front-end
+-HTML
+- CSS (with Bootstrap)
+- [Font Awesome](https://fontawesome.com/) for icons
+
+#Back-end
+-Jsp
+-Servlet
+-JDBC
+-Database- MySQL workbench
+
+##Modules
+
+-Register
+-Login
+-Logout
+-Add Notes
+-Show Notes
+-Search Notes
+-Delete Notes
+-Edit Notes
+
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+git clone https://github.com/Sumit10kr/online-notes-sharing-portal.git
+
+2.Navigate to the project directory:
+
+   ```bash
+ cd online-notes-sharing-portal
+
+3. Install Dependencies
+   npm install
+
+  # If using yarn
+  yarn install
+
+4.Set up the database. (Provide instructions if needed)
+5.Start the development server.
+   npm start
+
+   # If using yarn
+   yarn start
+
+6.Open your web browser and visit http://localhost:3000 to view the application.
+
+##Usage
+-Register a new account or log in with an existing account.
+-Create, edit, or delete notes using the provided interface.
+-Use the search bar to find specific notes by title.
+-Log out when finished using the application.
+
+
+Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Commit your changes and push to your fork.
+Submit a pull request with a detailed description of your changes.
+
+
+
+
+## Database Schema
+
+### Tables
+
+#### User
+
+The `user` table stores information about registered users.
+
+| Column Name | Data Type | Description               |
+|-------------|-----------|---------------------------|
+| id          | INT       | Unique user identifier    |
+| email       | VARCHAR   | User's email address      |
+| password    | VARCHAR   | User's password (hashed)  |
+| name        | VARCHAR   | User's name               |
+| created_at  | TIMESTAMP | Date and time of creation |
+
+#### Post
+
+The `post` table stores notes shared by users.
+
+| Column Name | Data Type | Description               |
+|-------------|-----------|---------------------------|
+| id          | INT       | Unique note identifier    |
+| title       | VARCHAR   | Title of the note         |
+| content     | TEXT      | Content of the note       |
+| pdate       | TIMESTAMP | Date and time of posting  |
+| uid         | INT       | User ID who posted the note|
+
+### Database Details
+
+- **Database Name:** enotes
+- **DBMS:** MySQL
+- **Connection Details:** localhost:3306 (or as per your configuration)
+- **Username:** (Your database username)
+- **Password:** (Your database password)
+
+
+
+
+
+
